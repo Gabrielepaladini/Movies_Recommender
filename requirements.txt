@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+ipywidgets>=7.6
+owlready2
+pyswip
+scikit-learn

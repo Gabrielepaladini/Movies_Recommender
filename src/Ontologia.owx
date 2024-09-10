@@ -1,0 +1,861 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/gabrielepaladini/ontologies/2024/6/untitled-ontology-7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/gabrielepaladini/ontologies/2024/6/untitled-ontology-7">
+    <Prefix name="" IRI="http://www.semanticweb.org/gabrielepaladini/ontologies/2024/6/untitled-ontology-7/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film_production_studios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Release_year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Streaming_Service"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#distributes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_been_released"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_genre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_production_countries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_runtime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_distribuited_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_realized_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_searched_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_used_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#realize"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#searches"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#use"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#imdb_quotes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#imdb_score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#imdb_votes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#monthly_subscription_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#platform_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#production_countries"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#runtime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tmdb_popularity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tmdb_quotes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tmdb_score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#username"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amazon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amazon_studios"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amblin_Entertainement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Black_Island"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CinephileAlex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeLine_Pictures"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deep_Water"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Film_Rites"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlickFanFabio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hbo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hulu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MovieBuffMarco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Netflix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Netflix_Studios"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RainMaker_Entertainement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SeriesFanAnna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#action"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comedy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#crime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#documentation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#drama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fantasy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horror"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#scifi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thriller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#western"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#20th_Century_Fox"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2012"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2017"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2018"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2021"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2022"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Disney+"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Streaming_Service"/>
+        <NamedIndividual IRI="#Amazon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film_production_studios"/>
+        <NamedIndividual IRI="#Amazon_studios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film_production_studios"/>
+        <NamedIndividual IRI="#Amblin_Entertainement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Black_Island"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#CinephileAlex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film_production_studios"/>
+        <NamedIndividual IRI="#DeLine_Pictures"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film_production_studios"/>
+        <NamedIndividual IRI="#Film_Rites"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#FlickFanFabio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Streaming_Service"/>
+        <NamedIndividual IRI="#Hbo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Streaming_Service"/>
+        <NamedIndividual IRI="#Hulu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#MovieBuffMarco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Streaming_Service"/>
+        <NamedIndividual IRI="#Netflix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film_production_studios"/>
+        <NamedIndividual IRI="#Netflix_Studios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film_production_studios"/>
+        <NamedIndividual IRI="#RainMaker_Entertainement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#SeriesFanAnna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#action"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#comedy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#crime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#documentation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#drama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#fantasy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#horror"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#scifi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#thriller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#western"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film_production_studios"/>
+        <NamedIndividual IRI="#20th_Century_Fox"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Release_year"/>
+        <NamedIndividual IRI="#2005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Release_year"/>
+        <NamedIndividual IRI="#2012"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Release_year"/>
+        <NamedIndividual IRI="#2016"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Release_year"/>
+        <NamedIndividual IRI="#2017"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Release_year"/>
+        <NamedIndividual IRI="#2018"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Release_year"/>
+        <NamedIndividual IRI="#2021"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Release_year"/>
+        <NamedIndividual IRI="#2022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Release_year"/>
+        <NamedIndividual IRI="#2023"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Release_year"/>
+        <NamedIndividual IRI="#2024"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Film"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Streaming_Service"/>
+        <NamedIndividual IRI="#Disney+"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realize"/>
+        <NamedIndividual IRI="#Amazon_studios"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realize"/>
+        <NamedIndividual IRI="#Amblin_Entertainement"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_been_released"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <NamedIndividual IRI="#2021"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_genre"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <NamedIndividual IRI="#thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_distribuited_by"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <NamedIndividual IRI="#Netflix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_realized_by"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <NamedIndividual IRI="#Netflix_Studios"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#use"/>
+        <NamedIndividual IRI="#CinephileAlex"/>
+        <NamedIndividual IRI="#Amazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realize"/>
+        <NamedIndividual IRI="#DeLine_Pictures"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_been_released"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <NamedIndividual IRI="#2022"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_genre"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <NamedIndividual IRI="#drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_distribuited_by"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <NamedIndividual IRI="#Hulu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_realized_by"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <NamedIndividual IRI="#Amazon_studios"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_realized_by"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <NamedIndividual IRI="#Film_Rites"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_realized_by"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <NamedIndividual IRI="#20th_Century_Fox"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_been_released"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <NamedIndividual IRI="#2012"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_genre"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <NamedIndividual IRI="#scifi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_distribuited_by"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <NamedIndividual IRI="#Netflix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_realized_by"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <NamedIndividual IRI="#RainMaker_Entertainement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realize"/>
+        <NamedIndividual IRI="#Film_Rites"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#use"/>
+        <NamedIndividual IRI="#FlickFanFabio"/>
+        <NamedIndividual IRI="#Netflix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#use"/>
+        <NamedIndividual IRI="#MovieBuffMarco"/>
+        <NamedIndividual IRI="#Hulu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realize"/>
+        <NamedIndividual IRI="#Netflix_Studios"/>
+        <NamedIndividual IRI="#Black_Island"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realize"/>
+        <NamedIndividual IRI="#RainMaker_Entertainement"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_been_released"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <NamedIndividual IRI="#2018"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_genre"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <NamedIndividual IRI="#scifi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_distribuited_by"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <NamedIndividual IRI="#Hbo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_realized_by"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <NamedIndividual IRI="#Amblin_Entertainement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_realized_by"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <NamedIndividual IRI="#DeLine_Pictures"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#use"/>
+        <NamedIndividual IRI="#SeriesFanAnna"/>
+        <NamedIndividual IRI="#Amazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_been_released"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <NamedIndividual IRI="#2017"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_genre"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <NamedIndividual IRI="#scifi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_distribuited_by"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <NamedIndividual IRI="#Amazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_realized_by"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <NamedIndividual IRI="#20th_Century_Fox"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realize"/>
+        <NamedIndividual IRI="#20th_Century_Fox"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realize"/>
+        <NamedIndividual IRI="#20th_Century_Fox"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realize"/>
+        <NamedIndividual IRI="#20th_Century_Fox"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_been_released"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <NamedIndividual IRI="#2005"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_genre"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <NamedIndividual IRI="#documentation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_distribuited_by"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <NamedIndividual IRI="#Amazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_realized_by"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <NamedIndividual IRI="#20th_Century_Fox"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <Literal>The dark secrets of a seemingly peaceful island threaten to swallow up an orphaned student when he grows close to a mysterious new teacher.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_score"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_votes"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2788.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#platform_name"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <Literal>Netflix</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#production_countries"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <Literal>DE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runtime"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">105</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_popularity"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">62.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_score"/>
+        <NamedIndividual IRI="#Black_Island"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <Literal>Vic and Melinda Van Allen are a couple in the small town of Little Wesley. Their loveless marriage is held together only by a precarious arrangement whereby, in order to avoid the messiness of divorce, Melinda is allowed to take any number of lovers as long as she does not desert her family.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_score"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_votes"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">34465.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#platform_name"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <Literal>hulu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#production_countries"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <Literal>US</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runtime"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">116</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <Literal>Deep_Water</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_popularity"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">285.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_score"/>
+        <NamedIndividual IRI="#Deep_Water"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <Literal>Astronaut Scorch Supernova finds himself caught in a trap when he responds to an SOS from a notoriously dangerous alien planet.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_score"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_votes"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25734.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#platform_name"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <Literal>Netflix</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#production_countries"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <Literal>CA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runtime"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">89</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_popularity"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_score"/>
+        <NamedIndividual IRI="#Escape_from_Planet_Earth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <Literal>When the creator of a popular video game system dies, a virtual contest is created to compete for his fortune.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_score"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_votes"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">420708.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#platform_name"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <Literal>Hbo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#production_countries"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <Literal>US</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runtime"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">140</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_popularity"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">116.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_score"/>
+        <NamedIndividual IRI="#Ready_Player_One"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <Literal>A teenage operative, who struggles to build a life for his family, is pitted against the essence of what challenges his dreams and the security of his younger brothers.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_score"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_votes"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">22.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#platform_name"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <Literal>Amazon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#production_countries"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <Literal>US</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runtime"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">84</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_popularity"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_score"/>
+        <NamedIndividual IRI="#The_Brotherhood"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <Literal>Documentary - Five D-Day veterans return to Normandy and re-visit the locations they landed on June 6, 1944, sharing their own very personal stories of war.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_score"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#imdb_score"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#platform_name"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <Literal>Amazon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#production_countries"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <Literal>US</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runtime"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_popularity"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tmdb_score"/>
+        <NamedIndividual IRI="#D-Day:_The_Price_Of_Freedom"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6.7</Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#imdb_score"/>
+        <DataProperty IRI="#imdb_quotes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#imdb_votes"/>
+        <DataProperty IRI="#imdb_quotes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tmdb_popularity"/>
+        <DataProperty IRI="#tmdb_quotes"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tmdb_score"/>
+        <DataProperty IRI="#tmdb_quotes"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
